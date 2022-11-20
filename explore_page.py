@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 # Avoid loading data every time, just load 1 time on the first visit of webpage
 @st.cache
 def load_data():
-    df = pd.read_csv(".\data\heart.csv")
+    #df = pd.read_csv(".\data\heart.csv")
+    df = pd.read_csv("./data/heart.csv") # support deployment environment, need to use linux path notation
     return df
 
 def show_explorer_page():    
