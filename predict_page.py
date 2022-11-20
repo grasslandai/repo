@@ -87,7 +87,7 @@ def show_predict_page():
         #X_new = X_new.reshape(1, -1)
         #X_new = X_new.astype(float)
         #have_disease = regressor_loaded.predict(X_new)
-        
+
         have_disease = regressor_loaded.predict(X)
 
         if have_disease == 1:
